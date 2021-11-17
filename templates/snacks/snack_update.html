@@ -1,0 +1,17 @@
+{% extends '_base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<center><h3> Update Snack</h3></center>
+<hr>
+
+<form method="post" class="uniForm">    
+    {% csrf_token %}
+    {{ form|crispy }}
+    
+
+
+<input type="submit" value="Update">
+
+</form>
+
+{% endblock %}
